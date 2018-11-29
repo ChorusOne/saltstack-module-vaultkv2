@@ -107,8 +107,6 @@ def get(key, profile=None):
     try:
         url = 'v1/{0}'.format(path)
         response = __utils__['vault.make_request']('GET', url, profile)
-        print(response.json())
-        log.error('URL:  %s', url)
         if response.status_code != 200:
             response.raise_for_status()
         data = response.json()['data']
