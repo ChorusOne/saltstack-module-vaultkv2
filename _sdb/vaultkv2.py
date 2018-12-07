@@ -24,7 +24,7 @@ requires only setting the ``driver`` parameter to ``vault``:
 .. code-block:: yaml
 
     myvault:
-      driver: vault
+      driver: vaultkv2
 
 Once configured you can access data using a URL such as:
 
